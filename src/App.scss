@@ -1,0 +1,111 @@
+$background-color: #f0d4d4;
+$primary-color: #ca1974;
+$secundary-color: #e4759f;
+$dark-color: #781259;
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calc-container {
+  position: relative;
+  height: 450px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: -5px -5px 19px 2px #fae1e1, 5px 5px 19px 2px #d2afaf;
+  box-shadow: -5px -5px 19px 2px #fae1e1, 5px 5px 19px 2px #d2afaf;
+}
+
+#display-container {
+  margin: 15px;
+  width: 90%;
+  background-color: $dark-color;
+  border-radius: 7px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: right;
+  // font-family: "Digital", serif;
+
+  #equation {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  #display {
+    margin: 0px;
+    font-size: 2rem;
+    // padding: 0px;
+  }
+}
+
+#numpad {
+  margin: 15px;
+  // margin-left: 5px;
+  position: absolute;
+  bottom: 0px;
+  // border: 1px solid;
+}
+
+.calc-button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.function-button {
+  background-color: $secundary-color;
+  color: white;
+}
+
+.num-button {
+  border: 1px solid $secundary-color;
+  background: $background-color;
+  color: $secundary-color;
+}
+
+.primary {
+  background-color: $primary-color;
+}
+
+#firm {
+  text-align: center;
+  color: $secundary-color;
+  position: relative;
+  top: 20px;
+  font-weight: 200;
+}
