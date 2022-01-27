@@ -129,6 +129,7 @@ export const handleDecimal = (state) => {
 };
 
 export const handleEvaluate = (state) => {
+  console.log(state);
   if (
     !state.currentValue.includes("Limit") &&
     state.formula !== "" &&
