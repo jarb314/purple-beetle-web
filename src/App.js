@@ -1,12 +1,8 @@
-import "./App.scss";
+import "./styles/App.scss";
 import React from "react";
 // import { connect } from "react-redux";
 import Numpad from "./Components/Numpad";
 import Display from "./Components/Display";
-
-// const isOperator = /[x/+-]/,
-//   endsWithOperator = /[x+-/]$/,
-//   endsWithNegativeSign = /\d[x/+-]{1}-$/;
 
 class App extends React.Component {
   // constructor(props) {
