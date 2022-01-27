@@ -1,7 +1,8 @@
-$background-color: #f0d4d4;
-$primary-color: #ca1974;
-$secundary-color: #e4759f;
-$dark-color: #781259;
+$background-color: #fff;
+$primary-color: #00587a;
+$secundary-color: #008891;
+$light-color: #e7e7de;
+$dark-color: #0f3057;
 @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
 @font-face {
   font-family: "Digital";
@@ -35,38 +36,44 @@ body {
 
 #calc-container {
   position: relative;
-  height: 450px;
-  width: 285px;
+  min-height: 450px;
+  height: 100vh;
+  width: 414px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
-  -webkit-box-shadow: -5px -5px 19px 2px #fae1e1, 5px 5px 19px 2px #d2afaf;
-  box-shadow: -5px -5px 19px 2px #fae1e1, 5px 5px 19px 2px #d2afaf;
+  // border-radius: 20px;
+  // -webkit-box-shadow: -5px -5px 19px 2px #fae1e1, 5px 5px 19px 2px #d2afaf;
+  // box-shadow: -5px -5px 19px 2px #fae1e1, 5px 5px 19px 2px #d2afaf;
+  border-left: $dark-color 1px solid;
+  border-right: $dark-color 1px solid;
 }
 
 #display-container {
-  margin: 15px;
-  width: 90%;
-  background-color: $dark-color;
-  border-radius: 7px;
-  padding: 5px 10px;
+  padding: 15px;
+  width: 100%;
+  // background-color: $dark-color;
+  // border-radius: 7px;
+  // padding: 5px 10px;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: $dark-color;
   text-align: right;
+  border-bottom: 1px $dark-color solid;
   // font-family: "Digital", serif;
 
   #equation {
     margin: 0px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 1px;
+    overflow-x: scroll;
   }
 
   #display {
     margin: 0px;
-    font-size: 2rem;
-    // padding: 0px;
+    font-size: 3rem;
+    overflow-x: scroll;
   }
 }
 
@@ -80,26 +87,27 @@ body {
 
 .calc-button {
   width: 100%;
-  height: 55px;
+  height: 70px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .function-button {
-  background-color: $secundary-color;
-  color: white;
+  background-color: $light-color;
+  color: $dark-color;
 }
 
 .num-button {
-  border: 1px solid $secundary-color;
+  // border: 1px solid $secundary-color;
   background: $background-color;
-  color: $secundary-color;
+  color: $dark-color;
 }
 
 .primary {
   background-color: $primary-color;
+  color: white;
 }
 
 #firm {
