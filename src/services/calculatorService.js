@@ -2,15 +2,6 @@ const isOperator = /[x/+-]/,
   endsWithOperator = /[x+-/]$/,
   endsWithNegativeSign = /\d[x/+-]{1}-$/;
 
-// TRY NOT TO USE
-// const maxDigitWarning = () => {
-//   return {
-//     currentVal: "Digit Limit Met",
-//     prevVal: this.state.currentVal
-//   };
-//   setTimeout(() => this.setState({ currentVal: this.state.prevVal }), 1000);
-// };
-
 export const initialize = () => {
   return {
     currentValue: "0",
